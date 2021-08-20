@@ -58,6 +58,8 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Documentos\User.cs" />
+    <Compile Include="Documentos\UserLog.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,7 +85,10 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Datos\" />
+    <Folder Include="Vistas\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Practica1LoginApp\Practica1LoginApp.csproj">
       <Project>{18CB9715-A515-4B49-BD52-A2A5A418CDA7}</Project>
