@@ -19,5 +19,7 @@ namespace Practica1LoginApp.Droid.Documentos
 
         public static Color Background = Color.FromRgb(58, 123, 215);
         public static Color MaintTextColor = Color.White;
+
+        public static int LoginIconHeight = 120;
     }
 }

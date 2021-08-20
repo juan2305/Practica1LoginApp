@@ -25,7 +25,7 @@ namespace Practica1LoginApp.Droid.Documentos
         }
         public bool Check()
         {
-            if (!this.Username.Equals("Juan") && !this.Password.Equals("1234"))
+            if (!this.Username.Equals("juan") && !this.Password.Equals("1234"))
                 return true;
             else
                 return false;
