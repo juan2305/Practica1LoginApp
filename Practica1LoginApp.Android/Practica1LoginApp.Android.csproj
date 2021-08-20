@@ -58,7 +58,8 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Documentos\User.cs" />
+    <Compile Include="Documentos\LogMessage.cs" />
+    <Compile Include="Documentos\Process.cs" />
     <Compile Include="Documentos\UserLog.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -87,7 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datos\" />
-    <Folder Include="Vistas\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Practica1LoginApp\Practica1LoginApp.csproj">
