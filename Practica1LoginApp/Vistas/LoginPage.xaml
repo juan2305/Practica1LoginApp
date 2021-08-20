@@ -3,15 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Practica1LoginApp.Droid.Vistas.LoginPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Image Source="logolatin.png"
+        <StackLayout x:Name="MasterLayout">
+            <StackLayout x:Name="Logo" VerticalOptions="FillAndExpand">
+                <Image Source="logolatin.png"
+               Margin="0,80,0,0"
                HorizontalOptions="Center"
                VerticalOptions="Center"></Image>
-            <Label x:Name="Lbl_Username" Text="Username"></Label>
-            <Entry x:Name="Entry_Username" Placeholder="Username"></Entry>
-            <Label x:Name="Lbl_Password" Text="Password"></Label>
-            <Entry x:Name="Entry_Password" Placeholder="Password"></Entry>
-            <Button x:Name="Btn_Ingresar" Text="Ingresar" Clicked="SignInProcedure"/>
+            </StackLayout>
+
+                <StackLayout x:Name="LogginZone" VerticalOptions="StartAndExpand">
+                <StackLayout.Padding>
+                    <OnIdiom x:TypeArguments="Thickness">
+                        <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                        <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                    </OnIdiom>
+                </StackLayout.Padding>
+
+                <ActivityIndicator x:Name="Mensajes" Color="Blue" IsRunning="True"/>
+                <Label x:Name="Lbl_Username" Text="Username"></Label>
+                <Entry x:Name="Entry_Username" Placeholder="Username"></Entry>
+                <Label x:Name="Lbl_Password" Text="Password"></Label>
+                <Entry x:Name="Entry_Password" Placeholder="Password"></Entry>
+                <Button x:Name="Btn_Ingresar" Text="Ingresar" Clicked="SignInProcedure"/>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
